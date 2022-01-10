@@ -1,0 +1,152 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+body {
+  margin: 0;
+  font-family: 'SF Pro Display';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #d8d8d8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: 100%;
+}
+.mainWrapper {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.box {
+  box-shadow: -4px 10px 35px -1px rgba(0, 0, 0, 0.75);
+  min-height: 20rem;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #ebebeb;
+}
+.box-1 {
+  min-height: 150px;
+
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+button {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: transparent;
+}
+.box-title {
+  display: flex;
+  justify-content: space-between;
+}
+.note-box-button {
+  border: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn {
+	border: none;
+  padding: 0;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  background: red;
+	position: relative;
+	z-index: 999;
+  display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3, 1.3);
+    opacity: 0;
+  }
+}
+.pulse-ring {
+  content: '';
+  width: 50px;
+  height: 50px;
+	background: #189BFF;
+  border: 5px solid #189BFF;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  animation: pulsate infinite 1.5s;
+}
+
+.type2{
+	background: #189BFF;
+}
+
+.type2 .pulse-ring{
+	background: transparent;
+}
+.note {
+  display: inline-block;
+  align-items: center;
+  margin: 10px 10px;
+  cursor: pointer;
+  transition: 500ms;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 50px;
+
+}
+.note-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.note-box p {
+  margin: 0;
+  margin-left: 5px;
+}
+.note i {
+  margin-left: 15px;
+  font-size: 1.5rem;
+  color: black;
+  transition: 500ms;
+}
+
+.note:hover {
+  border-radius: 2px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.note:hover  i {
+  color: red;
+}
